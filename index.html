@@ -118,6 +118,7 @@
                         <ul class="nav flex-column">
                             <li class="nav-item"><a class="nav-link" href="#WVRC_typography">Titles</a></li>
                             <li class="nav-item"><a class="nav-link" href="#WVRC_sections">Sections</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_images">Images</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#WVRC_components">Components</a>
@@ -416,6 +417,73 @@
                         <p class="text-4">To create the layout as intended, we use Sections to break up the different... sections of content.</p>
                         <p>We use the big "+" plus sign at the top to add a Section, then within that we add a Row with appropriate columns.</p>
                         <p>If you're using a background in the sections, you'll use 1/3 - 2/3 columns and the image is on the side with 1/3</p>
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Images
+		============================ -->
+                    <section id="WVRC_images">
+                        <h2>Images</h2>
+                        <p class="text-4">Image Sizes are, by default, as follows:</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                <th>Size name</th>
+                                <th>Size parameters</th>
+                                <th>Theme usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <th>Thumbnail size:</th>
+                                        <td>
+                                            744 × 418, cropped					</td>
+                                        <td class="small">
+                                            In posts list.					</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Medium size:</th>
+                                        <td>
+                                            744 × 0, scaled					</td>
+                                        <td class="small">
+                                            As featured image preview on single post page.<br>In list of child pages.					</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Large size:</th>
+                                        <td>
+                                            1200 × 0, scaled					</td>
+                                        <td class="small">
+                                            Not used in the theme.					</td>
+                                    </tr>
+                                  <tr title="Additional image size added by the theme. Can not be changed on this page.">
+                                        <th><code>reykjavik-intro</code>:</th>
+                                        <td>
+                                            1920 × 1080, cropped					</td>
+                                        <td class="small">
+                                            In page intro section.					</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h3>Working with image ratios - Example: blog post images</h3>
+                        <p>
+                            <a class="popup-img" href="assets/images/blog-postgrid-images.png"><img class="img-fluid border" src="assets/images/title-kicker-intro.png" alt="blog post image rules"></a>
+                        </p>
+                        <p>The image at the top uses the following styles:</p>
+                        <pre>
+                            {
+                                width: 100%;
+                                height: 240px;
+                                object-fit: cover;
+                                object-position: top center;
+                            }
+                        </pre>
+                        <p>This means they take up 100% of the allotted 33-50-100% of the article area available depending on screen size, the height is set to 240px, the image will stretch to fit the area, and will favor the top center of the image used.</p>
+                        <p>In practice, this makes the ideal aspect ratio 16:9 with a safe area the center 83% of the width. Avoid images where the focal point is with 8% of the edges.</p>
+                        <h3>Background Images</h3>
+                        <p>The best background image is an image with no important focal point. These images are meant to have content block them and obscure parts at times and not be visible at others.</p>
+                        <p>Favoring repeating designs or images with a more abstract feel like a highway, forest, mountainscape, assembly line, etc still allows for setting the tone of the content.</p>
+                        <p>If a subject needs to be featured, it is good to use the Image or Photo elements in the builder or editor and place the subject in the center for headshots or favoring the inside of the the lateral thirds to ensure the subject is visible in all elements.</p>
                     </section>
 
                     <hr class="divider">
