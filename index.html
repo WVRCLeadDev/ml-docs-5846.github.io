@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="assets/images/favicon.png" rel="icon" />
+    <title>Documentation | Mountain Leverage</title>
+    <meta name="description" content="Your Mountain Leverage documentation">
+    <meta name="author" content="WVRCDigital.com">
+
+    <!-- Stylesheet
+============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+    <!-- Highlight Syntax -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".WVRC-navigation" data-offset="125">
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Document Wrapper   
+=============================== -->
+    <div id="main-wrapper">
+
+        <!-- Header
+  ============================ -->
+        <header id="header" class="sticky-top">
+            <!-- Navbar -->
+            <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+                <div class="container-fluid">
+                    <!-- Sidebar Toggler -->
+                    <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+
+                    <!-- Logo -->
+                    <a class="logo ml-md-3" href="index.html" title="WVRC Template"> <img src="assets/images/wvrc_digital_web.png" alt="WVRC Template" /> </a>
+                    <span class="text-2 ml-2">SMB Template v1.2</span>
+                    <!-- Logo End -->
+
+                    <!-- Navbar Toggler -->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+
+                    <div id="header-nav" class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav">
+                            <!-- <li class="dropdown"> <a class="dropdown-toggle" href="#">Dropdown</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown Action</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="index.html">Action</a></li>
+                                            <li><a class="dropdown-item" href="feature-header-dark.html">Another Action</a></li>
+                                            <li><a class="dropdown-item" href="feature-header-primary.html">Something Else Here</a></li>
+                                            <li><a class="dropdown-item" href="index-2.html">Another Link</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Another Action</a>
+                                        <li><a class="dropdown-item" href="#">Something Else Here</a></li>
+                                </ul>
+                                </li> -->
+                            <li><a target="_blank" href="">Support</a></li>
+                        </ul>
+                    </div>
+                    <!-- SOCIAL ICONS -->
+                    <!-- <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+                        <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social-icons-dribbble"><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+                    </ul> -->
+                </div>
+            </nav>
+            <!-- Navbar End -->
+        </header>
+        <!-- Header End -->
+
+        <!-- Content
+  ============================ -->
+        <div id="content" role="main">
+
+            <!-- Sidebar Navigation
+	============================ -->
+            <div class="WVRC-navigation bg-dark docs-navigation-dark">
+                <ul class="nav flex-column ">
+                    <li class="nav-item"><a class="nav-link active" href="#WVRC_start">Getting Started</a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_installation">Installation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_html_structure">Site Structure</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_color_schemes">Color Schemes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_theme_customization">Customization</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_logo_settings">Logo Settings</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#WVRC_layout">Layout</a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_header">Front Page</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_navbar">Navbar</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_footer">Footer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#WVRC_content">Content</a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_typography">Titles</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_sections">Sections</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_images">Images</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#WVRC_components">Components</a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_backgrounds">Backgrounds</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_testimonial">Testimonial</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#WVRC_jobs">Jobs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#WVRC_changelog">Changelog</a>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#v1-1">v1.1</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Docs Content
+	============================ -->
+            <div class="WVRC-content">
+                <div class="container">
+
+                    <!-- Getting Started
+		============================ -->
+                    <section id="WVRC_start">
+                        <h1>Documentation</h1>
+                        <h2>WVRC Digital SMB Theme v1.2</h2>
+                        <p class="lead">Client Use Guide</p>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-4">
+                                <ul class="list-unstyled">
+                                    <li><strong>Version:</strong> 1.2</li>
+                                    <li><strong>Author:</strong>Joshua Reeves - Lead Developer</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-lg-4">
+                                <ul class="list-unstyled">
+                                    <li><strong class="font-weight-700">Created:</strong> 14 July, 2021</li>
+                                    <li><strong>Update:</strong> 10 October, 2022</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="alert alert-info">If you have any questions that are beyond the scope of this help file, Please feel free to email via <a target="_blank" href="https://wvrcdigital.com/contact/">Support Page</a>.</p>
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Installation
+		============================ -->
+                    <section id="WVRC_installation">
+                        <h2>Installation N/A</h2>
+                        <!-- <p class="lead">Follow the steps below to setup your site template:</p>
+                        <ol>
+                            <li>Unzip the downloaded package and open the <strong>/HTML</strong> folder to find all the template files. You will need to upload these files to your hosting web server using FTP or localhost in order to use it on your website.</li>
+                            <li>Below is the folder structure and needs to be uploaded to your website or localhost root directory:
+                                <ul>
+                                    <li><code>HTML/assets</code> - Contains all of the assets referenced
+                                        <ul>
+                                            <li><code>HTML/css</code> - Stylesheet files</li>
+                                            <li><code>HTML/images</code> - Images files</li>
+                                            <li><code>HTML/js</code> - Javacript files</li>
+                                            <li><code>HTML/sass</code> - Sass files</li>
+                                            <li><code>HTML/vendor</code> – All external libs.</li>
+                                        </ul>
+                                    </li>
+                                    <li><code>HTML/index.html</code> - Homepage
+                                </ul>
+                                </li>
+                                <li>You should upload all or specific HTML files as per your need.</li>
+                                <li>You are good to go for adding your content now!</li>
+                        </ol> -->
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- HTML Structure
+		============================ -->
+                    <section id="WVRC_html_structure">
+                        <h2>Structure</h2>
+                        <p>WVRC follows a simple and easy to customize structure for custom code and page builders. The following is a list of the main elements used in the template.</p>
+                        <ul>
+                            <li>
+                                <h3>Colors and Layout</h3>
+                                <p></p>
+                                <h4>The Theme Customizer:</h4>
+                                <p>You can access the theme customizer from the Dashboard > Appearance > Customize or from the front end as shown below</p>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p>
+                                            1.
+                                            <a class="popup-img" href="assets/images/customizer-front.png"><img class="img-fluid border" src="assets/images/customizer-front.png" alt=""></a>
+                                            Access the theme customizer from the front end.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>
+                                            2.
+                                            <a class="popup-img" href="assets/images/colors-layout00001.png"><img class="img-fluid border" src="assets/images/colors-layout00001.png" alt=""></a>
+                                            Theme Options menu.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>
+                                            3.
+                                            <a class="popup-img" href="assets/images/colors-layout00002.png"><img class="img-fluid border" src="assets/images/colors-layout00002.png" alt=""></a>
+                                            Colors and Layout menu.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Color Schemes
+		============================ -->
+                    <section id="WVRC_color_schemes">
+                        <h2>Color Schemes</h2>
+                        <p>The colors chosen are as follows:</p>
+                        <ul>
+                            <li><span style="padding:15px;height:15px;background:var(--color_accent)"></span>color_accent</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_accent_text)"></span>color_accent_text</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_header_text)"></span>color_header_text</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_header_text--a20)"></span>color_header_text Alpha 20%</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_header_headings)"></span>color_header_headings</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_intro_text)"></span>color_intro_text</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_intro_text--a20)"></span>color_intro_text Alpha 20%</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_intro_headings)"></span>color_intro_headings</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_intro_overlay_background)"></span>color_intro_overlay_background</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_intro_overlay_opacity)"></span>color_intro_overlay_opacity</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_intro_widgets_background)"></span>color_intro_widgets_background</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_intro_widgets_text)"></span>color_intro_widgets_text</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_intro_widgets_text--a20)"></span>color_intro_widgets_text Alpha 20%</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_intro_widgets_headings)"></span>color_intro_widgets_headings</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_content_text)"></span>color_content_text</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_content_text--a20)"></span>color_content_text Alpha 20%</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_content_headings)"></span>color_content_headings</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_footer_background)"></span>color_footer_background</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_footer_text)"></span>color_footer_text</li>
+                            <li><span style="padding:15px;height:15px;background:var(--color_footer_text--a20)"></span>color_footer_text Alpha 20%</li>
+                        </ul>
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Customization
+		============================ -->
+                    <section id="WVRC_theme_customization">
+                        <h2>Theme Customization</h2>
+                        <p>Customization to the theme itself is not recommended at this time. The Customizer can allow you to change the width of content and the colors above, but we have selected and placed the chosen colors and the best widths for viewability.</p>
+                        <p>Changes to Menus will likely be necessary. So Please do see the <a href="#WVRC_navbar">Menus</a> section</p>
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Logo Settings
+		============================ -->
+                    <section id="WVRC_logo_settings">
+                        <h2>Logo Settings</h2>
+                        <p>The Logo Container can be found in Customizer -> Site Indentity</p>
+                    </section>
+
+
+                    <hr class="divider">
+
+                    <!-- Layout
+		============================ -->
+                    <section id="WVRC_layout">
+                        <h2>Layout</h2>
+                        <p class="lead mb-5">Documentation and examples for header, navbar, sidebar, footer</p>
+                    </section>
+
+
+                    <!-- Header
+		============================ -->
+                    <section id="WVRC_header">
+                        <h2>Front Page</h2>
+                        <p class="lead">The Front page is defined in Settings > Reading, currently set to the page title "Home"</p>
+                        <h4>Anatomy:</h4>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p>
+                                    <a class="popup-img" href="assets/images/front-page-anatomy.jpg"><img class="img-fluid border" src="assets/images/front-page-anatomy.jpg" alt=""></a>
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                            <ul>
+                                <li>
+                                    <p>1. The copy here is taken from the page Excerpt in the editor. If you want to change the copy, edit the page and change the Excerpt.</p>
+                                    <p>Currently, the copy is formatted in this way:</p>
+
+                                    <pre><code class="html hljs xml">&lt;h2&gt;The Experts in&lt;br&gt; Voice Solutions&lt;/h2&gt;
+&lt;div class=&quot;typewriter&quot;&gt;
+    &lt;h3&gt;&lt;span class=&quot;erased&quot;&gt;&lt;/span&gt; Hands-Free, Eyes-Free™ &lt;br&gt;
+        &lt;span class=&quot;typed&quot;&gt;Distribution&lt;/span&gt; &lt;/h3&gt;&lt;/div&gt;
+&lt;p&gt;As the industry leader in voice-enabled workflow solutions, Mountain Leverage is laser-focused on helping our partners achieve peak performance in distribution centers of all sizes. &lt;/p&gt;
+&lt;a href=&quot;/solutions&quot; class=&quot;btn button&quot;&gt;Find Your Solution&lt;/a&gt;</code></pre>
+                                    <p>the `h2` contains a `br` tag to control where the line break happens</p>
+                                    <p>the `div` contains a `span` with the class `erased` and a `span` with the class `typed`, allowing the typed content to be changed using a list and the typewriter effect</p>
+                                    <p>the `p` contains the led-in copy</p>
+                                    <p>2. the button is a standard `a` tag link styled as 'btn button', the `href` can be changed to any page slug</p>
+                                </li>
+                            </ul>
+                        </p>
+                        <h4 id="#WVRC_intro_widgets">3. Intro Widgets:</h4>
+                        <p class="lead">The three boxes overlapping the Hero section are the Intro Widgets. These can be edited by visiting Dashboard > Appearance > Widgets > Intro Widgets</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p>
+                                    <a class="popup-img" href="assets/images/Dashboard-widgets-intro.gif"><img class="img-fluid border" src="assets/images/Dashboard-widgets-intro.gif" alt=""></a>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Navbar
+		============================ -->
+                    <section id="WVRC_navbar">
+                        <h2>Navbar</h2>
+                        <p class="lead">The main nav stays at the top of the page as the user scrolls while the top bar scrolls away.</p>
+                        <h4 class="mt-5">Anatomy:</h4>
+                        <p>
+                            <a class="popup-img" href="assets/images/nav-menus-anatomy.jpg"><img class="img-fluid border" src="assets/images/nav-menus-anatomy.jpg" alt="menu positions"></a>
+                        </p>
+                        <p>
+                            <ul>
+                                <li>1. The `primary` menu is the main navigation for the site. It is located in the header and is always visible.</li>
+                                <li>2. The `App Download` menu cointains the links for the iOS and Android Apps</li>
+                                <li>3. The `Knowledge Base` menu contains the resource links chosen during development</li>
+                                <li>4. The `Contact Ribbon` menu contains the phone number and Contact link</li>
+                            </ul>
+                        </p>
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Sidebar
+		============================ -->
+                    <!-- <section id="WVRC_sidebar">
+                        <h2>Sidebar</h2>
+
+                    </section>
+
+                    <hr class="divider"> -->
+
+                    <!-- Footer
+        ============================ -->
+                    <section id="WVRC_footer">
+                        <h2>Footer</h2>
+                        <p class="lead">The footer is a widget area that can be edited in Dashboard > Appearance > Widgets > Footer</p>
+                        <p>Similar to editing the
+                            <a href="#WVRC_intro_widgets"></a> intro widgets</p>
+                        <p>However, a menu is used wherever possible to deliver content to the footer area (i.e. Privacy -- Navigation Menu: Legal, App Download -- Navigation Menu: App Download)</p>
+
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Content
+		============================ -->
+                    <section id="WVRC_content">
+                        <h2>Content</h2>
+                        <p class="lead mb-5">Documentation and examples for displaying titles, summaries, featured images, etc</p>
+                    </section>
+
+                    <!-- Typography
+		============================ -->
+                    <section id="WVRC_typography">
+                        <h2>Titles</h2>
+                        <p class="text-4">Page titles and section titles have the option for an Alternative Title and a Kicker</p>
+                        <h3>Page Title in Intro</h3>
+                        <p>
+                            <a class="popup-img" href="assets/images/title-kicker-intro.png"><img class="img-fluid border" src="assets/images/title-kicker-intro.png" alt="menu positions"></a>
+                        </p>
+                        <p>To set the Alternate Title and Kicker, scroll to the bottom of the page editor</p>
+                        <p>
+                            <a class="popup-img" href="assets/images/title-kicker-editor.png"><img class="img-fluid border" src="assets/images/title-kicker-editor.png" alt="menu positions"></a>
+                        </p>
+                        <p>You will find the Alt Title and Title Kicker Custom Fields there. The Kicker is the small text on top of the Title.</p>
+
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Sections
+		============================ -->
+                    <section id="WVRC_sections">
+                        <h2>Sections</h2>
+                        <p class="text-4">To create the layout as intended, we use Sections to break up the different... sections of content.</p>
+                        <p>We use the big "+" plus sign at the top to add a Section, then within that we add a Row with appropriate columns.</p>
+                        <p>If you're using a background in the sections, you'll use 1/3 - 2/3 columns and the image is on the side with 1/3</p>
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Images
+		============================ -->
+                    <section id="WVRC_images">
+                        <h2>Images</h2>
+                        <p class="text-4">Image Sizes are, by default, as follows:</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                <th>Size name</th>
+                                <th>Size parameters</th>
+                                <th>Theme usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <th>Thumbnail size:</th>
+                                        <td>
+                                            744 × 418, cropped (64kb or less)					</td>
+                                        <td class="small">
+                                            In posts list.					</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Medium size:</th>
+                                        <td>
+                                            744 × 0, scaled (128kb or less)					</td>
+                                        <td class="small">
+                                            As featured image preview on single post page.<br>In list of child pages.					</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Large size:</th>
+                                        <td>
+                                            1200 × 0, scaled (312kb or less)				</td>
+                                        <td class="small">
+                                            Not used in the theme.					</td>
+                                    </tr>
+                                  <tr title="Additional image size added by the theme. Can not be changed on this page.">
+                                        <th><code>reykjavik-intro</code>:</th>
+                                        <td>
+                                            1920 × 1080, cropped (364kb or less)					</td>
+                                        <td class="small">
+                                            In page intro section.					</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <h3>Working with image ratios - Example: blog post images</h3>
+                        <p>
+                            <a class="popup-img" href="assets/images/blog-postgrid-images.png"><img class="img-fluid border" src="assets/images/blog-postgrid-images.png" alt="blog post image rules"></a>
+                        </p>
+                        <p>The image at the top uses the following styles:</p>
+                        <pre>
+                            {
+                                width: 100%;
+                                height: 240px;
+                                object-fit: cover;
+                                object-position: top center;
+                            }
+                        </pre>
+                        <p>This means they take up 100% of the allotted 33-50-100% of the article area available depending on screen size, the height is set to 240px, the image will stretch to fit the area, and will favor the top center of the image used.</p>
+                        <p>In practice, this makes the ideal aspect ratio 16:9 with a safe area the center 83% of the width. Avoid images where the focal point is with 8% of the edges.</p>
+                        <h3>Background Images</h3>
+                        <p>The best background image is an image with no important focal point. These images are meant to have content block them and obscure parts at times and not be visible at others.</p>
+                        <p>Favoring repeating designs or images with a more abstract feel like a highway, forest, mountainscape, assembly line, etc still allows for setting the tone of the content.</p>
+                        <p>If a subject needs to be featured, it is good to use the Image or Photo elements in the builder or editor and place the subject in the center for headshots or favoring the inside of the the lateral thirds to ensure the subject is visible in all elements.</p>
+                        <p><strong>Try to keep overall page size below 1 MB. If you are using images between 100 and 300kb, make sure you make large images count. Use grainy, blurry, or abstract images for background images or consider sticking with a gradient or repeating pattern.</strong></p>
+                        <p>Resources like <a href="https://tinypng.com">TinyPNG (You can use for PNG or JPG)</a> are great for easily reducing filesize and removing exif data from photos AFTER you've taken care of resizing.</p>
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Components
+		============================ -->
+                    <section id="WVRC_components">
+                        <h2>Components</h2>
+                        <p class="mb-5">These are the custom components related to Mounatin Leverage's layout system</p>
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Light Background
+		  ============================ -->
+                    <section id="WVRC_backgrounds">
+                        <h2>Section Backgrounds</h2>
+                        <p>Sections can have a background image with either a dark or light background, left-to-right or reversed</p>
+                        <p>Simple content can have a patterned bacground as well</p>
+                        <p>The css below will modify the Sections with the desired visual effect:</p>
+                        <ul>
+                            <li>
+                                <code>bg-under</code>
+                                <p>This allows a background image and overlays the section with a white to semi-transparent gradient overlay</p>
+                                <a class="popup-img" href="assets/images/background-light.png"><img class="img-fluid border" src="assets/images/background-light.png" alt=""></a>
+                                <a class="popup-img" href="assets/images/background-light-ltr.png"><img class="img-fluid border" src="assets/images/background-light-ltr.png" alt=""></a>
+                            </li>
+                            <li>
+                                <code>reverse</code>
+                                <p>Reverses the image and gradient direction so you can put the text on the right side every other section to create a checkerboard effect throughout the content</p>
+                                <a class="popup-img" href="assets/images/background-light-reverse.png"><img class="img-fluid border" src="assets/images/background-light-reverse.png" alt=""></a>
+                                <a class="popup-img" href="assets/images/background-css-light-reversed.png"><img class="img-fluid border" src="assets/images/background-css-light-reversed.png" alt=""></a>
+                            </li>
+                            <li>
+                                <code>medium</code>
+                                <p>The dark background has been toned down to be a medium dark color gradient fading to semi-opaque</p>
+                                <a class="popup-img" href="assets/images/background-dark-reverse.png"><img class="img-fluid border" src="assets/images/background-dark-reverse.png" alt=""></a>
+                                <a class="popup-img" href="assets/images/background-css-bg-dark-reverse.png"><img class="img-fluid border" src="assets/images/background-css-bg-dark-reverse.png" alt=""></a>
+                            </li>
+                            <li>
+                                <code>dark-bg</code>
+                                <p>This tells the text to be lighter to contrast the dark background. It's built into the `medium` class in most places, but it acts as insurance in the page builder</p>
+                                <a class="popup-img" href="assets/images/background-dark-reverse.png"><img class="img-fluid border" src="assets/images/background-dark-reverse.png" alt=""></a>
+                                <p>In the previous example, you can see how they could all be used together.</p>
+                            </li>
+                            <li>
+                                <code>patterned</code>
+                                <p>When a background is too much and plain white is too plain, use this subtle 'signal pattern' with a gradient revealing the pattern at the bottom</p>
+                                <a class="popup-img" href="assets/images/section-patterned.png"><img class="img-fluid border" src="assets/images/section-patterned.png" alt=""></a>
+                            </li>
+                            <li>
+                                <code>testimonial</code><span>Use with <code>dark-bg</code></span>
+                                <p>A unique dark background with a gold border on top to denote a testimonial</p>
+                                <a class="popup-img" href="assets/images/section-testimonial.png"><img class="img-fluid border" src="assets/images/section-testimonial.png" alt=""></a>
+                            </li>
+
+                        </ul>
+                        <p>With the css in place, you can use Design Options to choose the image to use</p>
+                        <p>
+                            <a class="popup-img" href="assets/images/background-designoptions-bgimg.png"><img class="img-fluid border" src="assets/images/background-designoptions-bgimg.png" alt="menu positions"></a>
+                        </p>
+                        <p>Remember to stretch the section</p>
+                        <p>
+                            <a class="popup-img" href="assets/images/section-fullwidth-wpbakery.png"><img class="img-fluid border" src="assets/images/section-fullwidth-wpbakery.png" alt="menu positions"></a>
+                        </p>
+
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Testimonials ============================================= -->
+
+                    <section id="WVRC_testimonial">
+                        <h2>Testimonials</h2>
+                        <p class="text-4">Picking up where we left off, Testimonials can be created in the Testimonials menu from the dashboard</p>
+                        <p>Dashboard > Testimonials</p>
+                        <p>It's recommended to copy one of the created testimonials and follow the format</p>
+                        <p>To call a testimonial, use the following steps:</p>
+                        <p>Testimonials themselves are called in using a shortcode</p>
+                        <code>[testimonial id={enter ID}]</code>
+                        <ol>
+                            <li>
+                                <p>Find the ID by going to the Testimonial in the admin and searching by keyword</p>
+                                <a class="popup-img" href="assets/images/section-testimonial-findID_1.png"><img class="img-fluid border" src="assets/images/section-testimonial-findID_1.png" alt=""></a>
+                            </li>
+                            <li>
+                                <p>Click on the Testimonial you want to use to get to the editor</p>
+                                <a class="popup-img" href="assets/images/section-testimonial-findID_2.png"><img class="img-fluid border" src="assets/images/section-testimonial-findID_2.png" alt=""></a>
+                            </li>
+                            <li>
+                                <p>Copy the ID from the URL</p>
+                                <a class="popup-img" href="assets/images/section-testimonial-findID_3.png"><img class="img-fluid border" src="assets/images/section-testimonial-findID_3.png" alt=""></a>
+                            </li>
+                            <li>
+                                <p>Add the shortcode in a Text Area inside a single Column, in a Row, within a Section. Add the CSS class <code>testimonial</code> <code>dark-bg</code> or you can use <code>patterned</code> </p>
+                                <a class="popup-img" href="assets/images/section-testimonial-shortcode.png"><img class="img-fluid border" src="assets/images/section-testimonial-shortcode.png" alt=""></a>
+                            </li>
+                        </ol>
+                    </section>
+
+                    <hr class="divider">
+
+                    <!-- Jobs
+		  ============================ -->
+                    <section id="WVRC_jobs">
+                        <h3>Job Listings</h3>
+                        <p>Jobs are posted by going to</p>
+                        <p>Dashboard > Jobs</p>
+                        <p>It's recommended to copy one of the created jobs and follow the format</p>
+                    </section>
+
+                    <hr class="divider">
+
+
+                    <!-- Changelog
+		============================ -->
+
+                    <section id="WVRC_changelog">
+                        <h2>Changelog</h2>
+                        <p class="text-4">See what's new added, changed, fixed, improved or updated in the latest versions. </p>
+
+                        <h3 id="v1-1">Version 1.1 <small class="text-muted">(tbd))</small></h3>
+                        <ul class="changelog">
+                        </ul>
+
+                        <hr class="divider">
+
+                        <h3 id="v1-0">Version 1.0 <small class="text-muted">(2 April, 2023)</small></h3>
+                        <p>Initial Release</p>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Content end -->
+
+        <!-- Footer
+  ============================ -->
+        <footer id="footer" class="section bg-dark footer-text-light">
+            <div class="container">
+                <p class="text-center">Copyright &copy; 2023 <a href="http://wvrcdigital.com">WVRC</a>. All Rights Reserved.</p>
+                <p class="text-2 text-center mb-0">Designed &amp; Developed by <a class="btn-link" target="_blank" href="">Joshua</a>.</p>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+    <!-- Document Wrapper end -->
+
+    <!-- Back To Top -->
+    <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript
+============================ -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Highlight JS -->
+    <script src="assets/vendor/highlight.js/highlight.min.js"></script>
+    <!-- Easing -->
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Custom Script -->
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
